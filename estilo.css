@@ -1,0 +1,167 @@
+footer{
+    border: solid 5px skyblue;
+    background-color:rgba(6, 153, 238, 0.897); 
+    padding: 15px; 
+    text-shadow: 1px 1px white; 
+}
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background: url(img/fondo.jpg); 
+    -webkit-background-size: cover;
+    background-attachment: fixed;
+}
+.contenedor-img{
+    background-color: white;
+    width: 50%;
+}
+img{
+    width: 100%;
+}
+section{
+    list-style-type: none;
+    margin: 2px;
+    padding: o;
+    overflow: hidden;
+    background-color:aliceblue;
+}
+.con:hover .zoom{
+    transition: transform .2s;
+    transform: scale(1.5); 
+}
+.con{
+    overflow:hidden;
+}
+header{
+    width: 100%;
+    background: rgb(83, 181, 238);
+}
+
+#btn-menu{
+    display: none;
+}
+
+header label{
+    display: none; 
+    width: 32px;
+    height: 32px;
+    padding: 11px;
+    border-right: 1px solid black;
+}
+header label:hover{
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3);
+}
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    
+    justify-content: flex-end
+    
+}
+.menu li{
+    border-right: 1px solid rgba(6, 153, 238, 0.897);
+}
+.menu li:hover{
+    background: rgba(0, 0, 0, 0.3);
+}
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: black;
+    text-decoration: none  ;
+}
+
+@media (max-width: 767px){
+    header label{
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        background: rgb(83, 181, 238);
+        width: 30%;
+        margin-left: -70%;
+        transition: all 0.5s;
+    }
+    .menu ul {
+        flex-direction: column;  
+    }
+    .menu li{
+        border-top: 1px solid black;
+    }
+    #btn-menu:checked ~ .menu {
+        margin: 0;
+
+    }
+}
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 80%;
+  }
+
+.contenedor .form .form-header .form-title{
+    font-weight: normal;
+    font-family: sans-serif;
+    color:  rgb(0, 118, 253);
+    text-align: center;
+    padding: 14px 0;
+}
+.contenedor .form .form-header .form-title span{
+    color:  rgb(0, 118, 253);
+}
+.contenedor .form{
+    background: rgb(0, 0, 0, .6);
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    padding: 5px 35px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 3px;
+}
+.contenedor .form .form-label {
+    display: block;
+    color: rgb(0, 118, 253);
+    font-size: 16px;
+   font-family: Roboto; 
+   position: relative;
+}
+.contenedor .form .form-input, .form-textarea {
+    background: rgba(0, 0, 0, .7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(0, 118, 253);
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: white;
+    font-family: Roboto;
+}
+.contenedor .form .form-textarea {
+    resize: vertical;
+    max-height: 150px;
+    min-height: 50px;
+}
+.contenedor .form .btn-submit {
+    width: 100%;
+    font-family: Roboto;
+    outline: none;
+    background: rgb(0, 118, 253);
+    font-size: 16px;
+    border: none;
+    color: white;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: all 1s ease;
+
+}
+.contenedor .form .btn-submit:hover{
+    background: rgb(2, 72, 151);
+
+}
